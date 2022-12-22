@@ -20,7 +20,6 @@ public class login_activity extends AppCompatActivity {
     ImageView back_button;
     EditText email, password;
     boolean passwordVisible;
-//    comment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
