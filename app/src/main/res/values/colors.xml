@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#B69A72</color>
+    <color name="secondary_color">#DCCBA3</color>
+    <color name="thrid_color">#FFFFFF</color>
+    <color name="linkcolor">#B69A72</color>
+    <color name="textcolor">#AA000000</color>
+</resources>
