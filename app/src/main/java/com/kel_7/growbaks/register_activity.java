@@ -186,45 +186,45 @@ public class register_activity extends AppCompatActivity {
 
     }
 
-        public void register_user(final String name,final String email,final String pass,final String confirm_pass)
-        {
-            StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    mNamaLengkap.setText((""));
-                    mEmail.setText("");
-                    mKataSandi.setText("");
-                    mUlangiSandi.setText("");
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+    public void register_user(final String name,final String email,final String pass,final String confirm_pass)
+    {
+        StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                mNamaLengkap.setText((""));
+                mEmail.setText("");
+                mKataSandi.setText("");
+                mUlangiSandi.setText("");
+                Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
 
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    mNamaLengkap.setText((""));
-                    mEmail.setText("");
-                    mKataSandi.setText("");
-                    mUlangiSandi.setText("");
-                    Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
-
-                }
             }
-            ){
-                @Nullable
-                @Override
-                protected Map<String, String> getParams() throws AuthFailureError {
-                    Map<String, String> map=new HashMap<String, String>();
-                    map.put("name", name);
-                    map.put("email", email);
-                    map.put("password", pass);
-                    map.put("confirm", confirm_pass);
-                    return map;
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                mNamaLengkap.setText((""));
+                mEmail.setText("");
+                mKataSandi.setText("");
+                mUlangiSandi.setText("");
+                Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
 
-                }
-            };
-
-            RequestQueue queue= Volley.newRequestQueue(getApplicationContext());
-            queue.add(request);
+            }
         }
+        ){
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map=new HashMap<String, String>();
+                map.put("name", name);
+                map.put("email", email);
+                map.put("password", pass);
+                map.put("confirm", confirm_pass);
+                return map;
 
+            }
+        };
+
+        RequestQueue queue= Volley.newRequestQueue(getApplicationContext());
+        queue.add(request);
     }
+
+}

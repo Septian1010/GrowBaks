@@ -13,12 +13,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class login_activity extends AppCompatActivity {
 
     TextView daftar_akun;
     ImageView back_button;
     EditText email, password;
+    Button btn_3;
     boolean passwordVisible;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class login_activity extends AppCompatActivity {
         back_button = (ImageView) findViewById(R.id.back_button);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
+        btn_3 = (Button) findViewById(R.id.btn_3);
 
         password.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -56,16 +59,22 @@ public class login_activity extends AppCompatActivity {
 
 
         daftar_akun.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               startActivity(new Intent(login_activity.this,register_activity.class));
-           }
-       });
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(login_activity.this,register_activity.class));
+            }
+        });
 
         back_button.setOnClickListener(view -> {
             Intent int2=new Intent(login_activity.this,MainActivity.class);
             startActivity(int2);
         });
 
+        btn_3.setOnClickListener(View -> {
+            Intent int2=new Intent(login_activity.this,main_activity_lapak.class);
+            startActivity(int2);
+        });
+
     }
+
 }
