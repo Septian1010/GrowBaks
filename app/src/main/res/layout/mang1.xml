@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-59dp"
+        android:src="@drawable/ellipse" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="92dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/ellipse"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-188dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="591dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Lapak"
+        android:textColor="@color/thrid_color"
+        android:textSize="25sp"
+        android:layout_toStartOf="@id/ellipse"
+        />
+
+    <ImageView
+        android:id="@+id/mang1"
+        android:layout_width="133dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="216dp"
+        android:src="@drawable/mang1" />
+
+    <TextView
+        android:id="@+id/tnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="216dp"
+        android:layout_toRightOf="@+id/mang1"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Baso Aci Mang Ganteng"
+        android:textColor="#B69A72"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tjenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tnama"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/mang1"
+        android:text="Makanan"
+        android:textColor="#B69A72" />
+
+    <ImageView
+        android:id="@+id/bintang1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tjenis"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/mang1"
+        android:src="@drawable/bintang1" />
+
+    <TextView
+        android:id="@+id/trate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tjenis"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/bintang1"
+        android:text="4.5"
+        android:textColor="#B69A72" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="376dp"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="297dp"
+        android:src="@drawable/line1" />
+
+</RelativeLayout>
