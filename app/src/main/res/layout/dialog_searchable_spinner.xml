@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/button_shape2">
+    
+    <TextView
+        android:id="@+id/text_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih lokasi anda"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/primary_color"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubah_lokasi"
+        android:hint="Cari lokasi..."
+        android:textColorHint="@color/primary_color"
+        android:padding="12dp"
+        android:textColor="@color/primary_color"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_shape2"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_daerah"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        />
+</LinearLayout>

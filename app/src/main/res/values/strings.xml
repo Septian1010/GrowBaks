@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Growbaks</string>
-
+    <string-array name="list_nama_daerah">
+        <item>Pilih lokasi anda</item>
+        <item>Gerlong</item>
+        <item>Sukajadi</item>
+        <item>Cipaku</item>
+        <item>Ciwaruga</item>
+        <item>Cihampelas</item>
+        <item>Cikoneng</item>
+    </string-array>
 </resources>
